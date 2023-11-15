@@ -40,6 +40,7 @@ bottleCard.classList.add("mb-3");
 bottleCard.classList.add("product");
 
 const bottleImg = document.createElement("img");
+bottleImg.classList.add("product-img");
 bottleImg.setAttribute("src", "./images/bottle.jpg");
 bottleImg.setAttribute("alt", "prd1");
 
@@ -95,6 +96,7 @@ protectorCard.classList.add("mb-3");
 protectorCard.classList.add("product");
 
 const protectorImg = document.createElement("img");
+protectorImg.classList.add("product-img");
 protectorImg.setAttribute("src", "./images/protector.jpg");
 protectorImg.setAttribute("alt", "prd2");
 
@@ -118,6 +120,7 @@ usbCard.classList.add("mb-3");
 usbCard.classList.add("product");
 
 const usbImg = document.createElement("img");
+usbImg.classList.add("product-img");
 usbImg.setAttribute("src", "./images/usb.jpg");
 usbImg.setAttribute("alt", "prd3");
 
@@ -140,8 +143,9 @@ cartTitle.classList.add("p-2");
 cartTitle.classList.add("text-center");
 cartTitle.innerText = "Cart";
 
-const cart = document.createElement('div');
-cart.classList.add('cart');
+const cartMain = document.createElement('div');
+cartMain.classList.add('cart');
+
 
 /* append */
 root.append(row);
@@ -167,4 +171,8 @@ usbCard.append(usbCardBody);
 
 row.append(cartSection);
 cartSection.append(cartTitle);
-cartSection.append(cart);
+cartSection.append(cartMain);
+
+
+/* Cart functionality */
+
